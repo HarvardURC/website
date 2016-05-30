@@ -6,6 +6,7 @@
   --crimson: #A51C30;
   --gray-light: #999999;
   --gray-dark: #444444;
+  --gray-darkest: #202020;
   --gray-lightest: #F2F5F7;
 }
 
@@ -16,6 +17,27 @@
     color: white;
     font-weight: 600;
     padding-bottom: 16px;
+}
+
+@media screen and (max-width:1090px) {
+    .my-intro-title {
+        font-size:50px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .my-intro-title {
+        font-size:30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .my-intro-title {
+        padding-left: 10px;
+    }
+    .my-intro-text {
+        padding-left: 10px;
+    }
 }
 
 .my-intro-text {
@@ -43,7 +65,7 @@
 /* Navbar */
 #my-navbar {
     margin-bottom: 0px;
-    background-color: var(--gray-light);
+    background-color: var(--gray-darkest);
     border-width: 0px;
 }
 
@@ -72,9 +94,8 @@
 
 .navbar-brand img {
   max-width:76px;
-  margin-top: -6px;
+  margin-top: -7px;
 }
-
 
 /**********************
 *                     *
@@ -94,8 +115,29 @@
     background-position-y: -250px;
 }
 
+@media screen and (max-width: 1200px) {
+    .hurc-intro {
+        background-position-y: -150px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .hurc-intro {
+        background-position-y: 0px;
+    }
+    .hurc-intro-field {
+        height: 275px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hurc-intro {
+        background-position-y: 0px;
+    }
+}
+
 .hurc-intro-field {
-    height: 420px;
+    height: 500px;
     padding: 24px 0px 20px 0px;
 }
 
@@ -132,6 +174,14 @@
     padding: 40px 0 40px 4%;
 }
 
+@media screen and (max-width:768px) {
+    .mission-statement-text-container {
+        padding: 40px 20px;
+    }
+    .mission-statement-image-container {
+        padding: 40px 20px;
+    }
+}
 
 /* Teams */
 
@@ -141,12 +191,13 @@
 }
 
 .teams-project-container {
-    height:600px;
+    height: 640px;
 }
 
 .teams-project-inner-container {
     box-shadow: 0px 5px 60px 10px rgba(0, 0, 0, 0.2);
     height: 560px;
+    padding: 0 10px;
 }
 
 .teams-project-mm {
@@ -155,7 +206,7 @@
     background-clip: content-box;
     background-position: center center;
     background-repeat: no-repeat;
-    padding: 20px 2% 20px 0;
+    padding: 40px 0 40px 0;
 }
 
 .teams-project-mw {
@@ -164,7 +215,7 @@
     background-clip: content-box;
     background-position: center center;
     background-repeat: no-repeat;
-    padding: 20px 1% 20px 1%;
+    padding: 40px 0 40px 0;
 }
 
 .teams-project-uas {
@@ -173,7 +224,19 @@
     background-clip: content-box;
     background-position: center center;
     background-repeat: no-repeat;
-    padding: 20px 0 20px 2%;
+    padding: 40px 0 40px 0;
+}
+
+@media screen and (max-width:768px) {
+    .teams-project-mm {
+        padding: 40px 20px;
+    }
+    .teams-project-mw {
+        padding: 40px 20px;
+    }
+    .teams-project-uas {
+        padding: 40px 20px;
+    }
 }
 
 .teams-project-container .my-title{
@@ -183,7 +246,7 @@
 }
 
 .teams-project-container .my-text{
-    font-size: 16px;
+    font-size: 20px;
     color: black;
     padding: 10px;
 }
@@ -192,13 +255,20 @@
     text-align: right;
     padding: 2px 10px 2px 10px;
     position: absolute;
-    bottom: 7%;
+    bottom: 9%;
     font-size: 30px;
     color: white;
     background-color: var(--crimson);
     border-width: 0px;
     border-radius: 5px;
+    right:40px;
 
+}
+
+@media screen and (max-width: 1200px) {
+    .teams-project-button {
+        font-size: 20px;
+    }
 }
 
 .teams-project-button:hover {
@@ -206,16 +276,34 @@
     color:white;
 }
 
-.teams-project-uas .teams-project-button {
-    right: 4%;
-}
+@media screen and (min-width: 970px) {
+    .teams-project-mm .teams-project-button {
+        right: 4%;
+    }
 
-.teams-project-mw .teams-project-button {
-    right: 7%;
-}
+    .teams-project-mw .teams-project-button {
+        right: 7%;
+    }
 
-.teams-project-mm .teams-project-button {
-    right: 10%;
+    .teams-project-mm .teams-project-button {
+        right: 10%;
+    }
+
+    .teams-project-container .my-text{
+        font-size: 16px;
+    }
+
+    .teams-project-uas {
+        padding: 40px 0 40px 2%;
+    }
+
+    .teams-project-mm {
+        padding: 40px 2% 40px 0;
+    }
+
+    .teams-project-mw {
+        padding: 40px 1% 40px 1%;
+    }
 }
 
 
@@ -236,8 +324,27 @@
 
 .recruitment-who-container {
     padding: 40px 4% 40px 0;
+    }
 }
 
 .recruitment-background-container {
     padding: 40px 0 40px 4%;
+}
+
+@media (max-width: 970px) {
+    .recruitment-background-container {
+        padding: 40px 0 40px 0;
+    }
+    .recruitment-who-container {
+        padding: 40px 0 40px 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .recruitment-who-container {
+        padding: 40px 20px;
+    }
+    .recruitment-background-container {
+        padding: 40px 20px;
+    }
 }
