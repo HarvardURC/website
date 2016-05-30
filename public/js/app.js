@@ -1,3 +1,3 @@
 
 // public/js/app.js
-angular.module('HurcSite', ['ngRoute', 'appRoutes', 'MainCtrl']);
+angular.module('HurcSite', ['ngRoute', 'appRoutes', 'LandingCtrl', 'MainCtrl', 'ContactCtrl']);
