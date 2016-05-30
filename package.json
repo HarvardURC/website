@@ -1,0 +1,25 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "description": "Hurc website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/HarvardURC/website.git"
+  },
+  "author": "Timothy Tamm",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/HarvardURC/website/issues"
+  },
+  "dependencies": {
+    "bower": "~1.7.9",
+    "express": "~4.13.4",
+    "mongoose": "~4.4.19",
+    "method-override": "~2.3.6",
+    "body-parser": "~1.15.1"
+  }
+}
