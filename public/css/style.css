@@ -62,6 +62,7 @@
     color: var(--crimson);
 }
 
+
 /* Navbar */
 #my-navbar {
     margin-bottom: 0px;
@@ -86,6 +87,10 @@
 
 .navbar-brand {
   padding: 0px; /* firefox bug fix */
+}
+
+.my-navbar-toggle {
+    margin-top: 4px;
 }
 
 .navbar-brand img {
