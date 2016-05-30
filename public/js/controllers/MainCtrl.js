@@ -17,7 +17,6 @@ angular.module('MainCtrl', [])
               $scope.includeMobileTemplate = false;
           }
       });
-      console.log($scope.includeMobileTemplate);
   });
 
   $scope.$on("$destroy",function (){
