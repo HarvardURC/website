@@ -265,6 +265,18 @@
     padding: 10px;
 }
 
+@media screen and (max-width:1200px) {
+    .teams-project-container .dont-show{
+        font-size: 0;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .teams-project-container .dont-show{
+        font-size: 20;
+    }
+}
+
 .teams-project-button {
     text-align: right;
     padding: 2px 10px 2px 10px;
@@ -346,9 +358,9 @@
 
 @media screen and (max-width:768px) {
     .recruitment-who-container {
-        padding: 40px 20px;
+        padding: 40px 20px 20px 20px;
     }
     .recruitment-background-container {
-        padding: 40px 20px;
+        padding: 20px 20px 40px 20px;
     }
 }
