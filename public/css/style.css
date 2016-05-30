@@ -1,0 +1,243 @@
+
+/* public/css/styles.css */
+
+/* Color variables */
+:root {
+  --crimson: #A51C30;
+  --gray-light: #999999;
+  --gray-dark: #444444;
+  --gray-lightest: #F2F5F7;
+}
+
+/* Text types */
+
+.my-intro-title {
+    font-size: 62px;
+    color: white;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+
+.my-intro-text {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.my-title {
+    font-size: 70px;
+    color: white;
+    font-weight: 600;
+}
+
+.my-text {
+    font-size: 23px;
+    color: white;
+    font-weight: 500;
+}
+
+.my-text .crimson {
+    color: var(--crimson);
+}
+
+/* Navbar */
+#my-navbar {
+    margin-bottom: 0px;
+    background-color: var(--gray-light);
+    border-width: 0px;
+}
+
+.my-navbar-container {
+    height: 64px;
+}
+
+#my-navbar li {
+    height: 64px;
+}
+
+#my-navbar .my-navbar-buttons {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+#my-navbar li:hover {
+    background-color: var(--crimson);
+}
+
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+
+.navbar-brand img {
+  max-width:76px;
+  margin-top: -6px;
+}
+
+
+/**********************
+*                     *
+*    landing blocks   *
+*                     *
+***********************/
+
+
+/* Hurc intro */
+
+.hurc-intro {
+    background: url(../img/piercehall.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: -250px;
+}
+
+.hurc-intro-field {
+    height: 420px;
+    padding: 24px 0px 20px 0px;
+}
+
+.hurc-intro-textbox {
+}
+
+
+/* Mission statement */
+
+.mission-statement {
+    background: white;
+    margin: 40px 0 40px 0;
+}
+
+.mission-statement .my-title {
+    color: var(--gray-light);
+}
+
+.mission-statement .my-text{
+    color: var(--gray-dark);
+}
+
+.mission-statement-image-container {
+    padding: 40px 4% 40px 0px;
+}
+
+.mission-statement-image {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0px 5px 60px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mission-statement-text-container {
+    padding: 40px 0 40px 4%;
+}
+
+
+/* Teams */
+
+.teams {
+    background: var(--gray-lightest);
+
+}
+
+.teams-project-container {
+    height:600px;
+}
+
+.teams-project-inner-container {
+    box-shadow: 0px 5px 60px 10px rgba(0, 0, 0, 0.2);
+    height: 560px;
+}
+
+.teams-project-mm {
+    background: url(../img/mm.jpg);
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px 2% 20px 0;
+}
+
+.teams-project-mw {
+    background: url(../img/mw.png);
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px 1% 20px 1%;
+}
+
+.teams-project-uas {
+    background: url(../img/uas.jpg) ;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px 0 20px 2%;
+}
+
+.teams-project-container .my-title{
+    color: var(--crimson);
+    font-size: 50px;
+    text-align: center;
+}
+
+.teams-project-container .my-text{
+    font-size: 16px;
+    color: black;
+    padding: 10px;
+}
+
+.teams-project-button {
+    text-align: right;
+    padding: 2px 10px 2px 10px;
+    position: absolute;
+    bottom: 7%;
+    font-size: 30px;
+    color: white;
+    background-color: var(--crimson);
+    border-width: 0px;
+    border-radius: 5px;
+
+}
+
+.teams-project-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color:white;
+}
+
+.teams-project-uas .teams-project-button {
+    right: 4%;
+}
+
+.teams-project-mw .teams-project-button {
+    right: 7%;
+}
+
+.teams-project-mm .teams-project-button {
+    right: 10%;
+}
+
+
+/* Recruitment */
+
+.recruitment {
+
+}
+
+.recruitment .my-title{
+    color: var(--gray-light);
+    font-size: 45px;
+}
+
+.recruitment .my-text{
+    color: var(--gray-dark);
+}
+
+.recruitment-who-container {
+    padding: 40px 4% 40px 0;
+}
+
+.recruitment-background-container {
+    padding: 40px 0 40px 4%;
+}
