@@ -67,25 +67,21 @@
     margin-bottom: 0px;
     background-color: var(--gray-darkest);
     border-width: 0px;
-}
-
-.my-navbar-container {
-    height: 64px;
-}
-
-#my-navbar li {
-    height: 64px;
+    border-width: 0px;
 }
 
 #my-navbar .my-navbar-buttons {
     font-size: 22px;
     color: white;
     font-weight: bold;
-    margin-top: 7px;
 }
 
 #my-navbar li:hover {
     background-color: var(--crimson);
+}
+
+.my-navbar-container {
+    margin-top: 7px;
 }
 
 .navbar-brand {
@@ -93,8 +89,26 @@
 }
 
 .navbar-brand img {
-  max-width:76px;
-  margin-top: -7px;
+    max-width: 69px;
+    margin-top: -5px;
+    padding-left: 6px;
+}
+
+@media screen and (min-width:768px) {
+    .my-navbar-container {
+        height: 64px;
+        margin-top: 0px;
+    }
+    .navbar-brand img {
+      max-width:76px;
+      margin-top: -4px;
+    }
+    #my-navbar .my-navbar-buttons {
+        margin-top: 7px;
+    }
+    #my-navbar li {
+        height: 64px;
+    }
 }
 
 /**********************
@@ -120,6 +134,11 @@
         background-position-y: -150px;
     }
 }
+.hurc-intro-field {
+    height: 500px;
+    padding: 24px 0px 20px 0px;
+}
+
 
 @media screen and (max-width: 970px) {
     .hurc-intro {
@@ -134,11 +153,6 @@
     .hurc-intro {
         background-position-y: 0px;
     }
-}
-
-.hurc-intro-field {
-    height: 500px;
-    padding: 24px 0px 20px 0px;
 }
 
 .hurc-intro-textbox {
@@ -324,20 +338,10 @@
 
 .recruitment-who-container {
     padding: 40px 4% 40px 0;
-    }
 }
 
 .recruitment-background-container {
     padding: 40px 0 40px 4%;
-}
-
-@media (max-width: 970px) {
-    .recruitment-background-container {
-        padding: 40px 0 40px 0;
-    }
-    .recruitment-who-container {
-        padding: 40px 0 40px 0;
-    }
 }
 
 @media screen and (max-width:768px) {
