@@ -10,6 +10,7 @@
   --gray-lightest: #F2F5F7;
 }
 
+
 /* Text types */
 
 .my-intro-title {
@@ -142,6 +143,18 @@
 *                     *
 ***********************/
 
+.landing-block {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width:768px) {
+    .landing-block {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
 
 /* Hurc intro */
 
@@ -151,7 +164,6 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*background-position-y: -250px;*/
 }
 
 .hurc-intro-field {
@@ -171,7 +183,7 @@
 }
 
 .mission-statement .my-title {
-    color: var(--gray-light);
+    color: var(--crimson);
 }
 
 .mission-statement .my-text{
@@ -179,7 +191,7 @@
 }
 
 .mission-statement-image-container {
-    padding: 40px 4% 40px 0px;
+    padding: 60px 4% 60px 0px;
 }
 
 .mission-statement-image {
@@ -189,7 +201,7 @@
 }
 
 .mission-statement-text-container {
-    padding: 16px 0 40px 4%;
+    padding: 36px 0 60px 4%;
 }
 
 @media screen and (max-width:768px) {
@@ -371,4 +383,58 @@
     .recruitment-background-container {
         padding: 20px 20px 40px 20px;
     }
+}
+
+
+/* Projects intro */
+
+.projects-intro {
+    background: url(../img/xbeeboard.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+}
+
+.text-container {
+    padding: 60px 0;
+}
+
+.text-container .my-text{
+    font-size: 24px;
+}
+
+@media screen and (max-width:768px) {
+    .text-container {
+        padding: 40px 20px;
+    }
+}
+
+/* Community */
+
+.community {
+    background: var(--gray-lightest);
+}
+
+.community .my-title {
+    color: var(--crimson);
+}
+
+.community .my-text {
+    color:black;
+}
+
+/* Featured in */
+
+.featured-in .my-title {
+    color: var(--crimson);
+}
+
+.featured-in .my-text {
+    color: var(--gray-dark);
+}
+
+.featured-outlets {
+    height: 200px;
 }
