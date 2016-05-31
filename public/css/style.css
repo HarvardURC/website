@@ -93,9 +93,8 @@
 }
 
 #my-navbar .my-navbar-buttons {
-    font-size: 22px;
+    font-size: 18px;
     color: white;
-    font-weight: bold;
 }
 
 #my-navbar li:hover {
