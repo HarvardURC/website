@@ -17,6 +17,7 @@
     color: white;
     font-weight: 600;
     padding-bottom: 16px;
+    padding-top: 10vh;
 }
 
 @media screen and (max-width:1090px) {
@@ -50,16 +51,29 @@
     font-size: 70px;
     color: white;
     font-weight: 600;
+    padding-bottom: 20px;
 }
 
 .my-text {
-    font-size: 23px;
+    font-size: 18px;
     color: white;
     font-weight: 500;
 }
 
 .my-text .crimson {
     color: var(--crimson);
+}
+
+.scroll-glyph {
+    position: absolute;
+    bottom: 20px;
+    left:50%;
+    margin-left: -15px;
+}
+
+.scroll-glyph .glyphicon{
+    color: white;
+    font-size: 30px;
 }
 
 
@@ -69,6 +83,12 @@
     background-color: var(--gray-darkest);
     border-width: 0px;
     border-width: 0px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
 }
 
 #my-navbar .my-navbar-buttons {
@@ -131,33 +151,12 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position-y: -250px;
+    /*background-position-y: -250px;*/
 }
 
-@media screen and (max-width: 1200px) {
-    .hurc-intro {
-        background-position-y: -150px;
-    }
-}
 .hurc-intro-field {
-    height: 500px;
+    height: 100vh;
     padding: 24px 0px 20px 0px;
-}
-
-
-@media screen and (max-width: 970px) {
-    .hurc-intro {
-        background-position-y: 0px;
-    }
-    .hurc-intro-field {
-        height: 275px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .hurc-intro {
-        background-position-y: 0px;
-    }
 }
 
 .hurc-intro-textbox {
@@ -207,6 +206,10 @@
 .teams {
     background: var(--gray-lightest);
 
+}
+
+.teams-projects {
+    padding: 40px 0;
 }
 
 .teams-project-container {
@@ -354,11 +357,11 @@
 }
 
 .recruitment-who-container {
-    padding: 40px 4% 40px 0;
+    padding: 60px 4% 60px 0;
 }
 
 .recruitment-background-container {
-    padding: 40px 0 40px 4%;
+    padding: 60px 0 60px 4%;
 }
 
 @media screen and (max-width:768px) {
