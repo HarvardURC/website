@@ -82,7 +82,7 @@
     margin-bottom: 0px;
     background-color: var(--gray-darkest);
     border-width: 0px;
-    border-width: 0px;
+    border-radius: 0px;
     position: fixed;
     width: 100%;
     left: 0;
