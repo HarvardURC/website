@@ -13,50 +13,55 @@
 
 /* Text types */
 
-.my-intro-title {
-    font-size: 62px;
-    color: white;
-    font-weight: 600;
-    padding-bottom: 16px;
-    padding-top: 10vh;
-}
-
-@media screen and (max-width:1090px) {
-    .my-intro-title {
-        font-size:50px;
-    }
-}
-
-@media screen and (max-width:580px) {
-    .my-intro-title {
-        font-size:30px;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .my-intro-title {
-        padding-left: 10px;
-    }
-    .my-intro-text {
-        padding-left: 10px;
-    }
-}
-
-.my-intro-text {
-    font-size: 20px;
-    color: white;
-    font-weight: 500;
-}
-
 .my-title {
-    font-size: 70px;
+    font-size: 65px;
     color: white;
-    font-weight: 600;
     padding-bottom: 20px;
 }
 
 .my-text {
     font-size: 18px;
+    color: white;
+    font-weight: 500;
+    font-family: 'robotoregular', Arial, sans-serif;
+}
+
+@media screen and (max-width:500px) {
+    .my-title {
+        font-size: 40px;
+    }
+}
+
+.hurc-intro .my-title {
+    font-size: 62px;
+    color: white;
+    padding-bottom: 16px;
+    padding-top: 10vh;
+}
+
+@media screen and (max-width:1090px) {
+    .hurc-intro .my-title {
+        font-size:50px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .hurc-intro .my-title {
+        font-size:30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hurc-intro .my-title {
+        padding-left: 10px;
+    }
+    .hurc-intro .my-text {
+        padding-left: 10px;
+    }
+}
+
+.hurc-intro .my-text {
+    font-size: 20px;
     color: white;
     font-weight: 500;
 }
@@ -159,18 +164,16 @@
 
 @media screen and (max-width:768px) {
     .landing-block {
-        margin-top: 40px;
-        margin-bottom: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .content-left {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 20px !important;
     }
 
     .content-right {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 20px !important;
     }
 }
 
@@ -198,7 +201,6 @@
 
 .mission-statement {
     background: white;
-    margin: 40px 0 40px 0;
 }
 
 .mission-statement .my-title {
@@ -282,8 +284,15 @@
 
 .teams-project-container .my-title{
     color: var(--crimson);
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width:500px) {
+    .teams-project-container .my-title{
+        font-size: 37px;
+    }
 }
 
 .teams-project-container .my-text{
@@ -293,13 +302,13 @@
 }
 
 @media screen and (max-width:1200px) {
-    .teams-project-container .dont-show{
+    .dont-show{
         font-size: 0;
     }
 }
 
 @media screen and (max-width:990px) {
-    .teams-project-container .dont-show{
+    .dont-show{
         font-size: 20;
     }
 }
@@ -368,28 +377,10 @@
 
 .recruitment .my-title{
     color: var(--gray-light);
-    font-size: 45px;
 }
 
 .recruitment .my-text{
     color: var(--gray-dark);
-}
-
-.recruitment-who-container {
-    padding: 60px 4% 60px 0;
-}
-
-.recruitment-background-container {
-    padding: 60px 0 60px 4%;
-}
-
-@media screen and (max-width:768px) {
-    .recruitment-who-container {
-        padding: 40px 20px 20px 20px;
-    }
-    .recruitment-background-container {
-        padding: 20px 20px 40px 20px;
-    }
 }
 
 
@@ -429,7 +420,7 @@
 }
 
 .community .my-text {
-    color:black;
+    color: var(--gray-dark);
 }
 
 .community .content-left {
@@ -446,6 +437,35 @@
     color: var(--gray-dark);
 }
 
-.featured-outlets {
-    height: 200px;
+.featured-col {
+    padding: 20px;
 }
+
+.featured-outlets .image {
+    width: 100%;
+
+}
+
+.featured-outlets {
+    padding-top: 0;
+}
+
+@media screen and (min-width:768px) {
+    .featured-outlets {
+        padding-top: 40px;
+        height: 188px;
+    }
+
+    .featured-outlets .image {
+        width: 100%;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .featured-col {
+        padding: 0 30px;
+        height: 100px;
+    }
