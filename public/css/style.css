@@ -143,14 +143,34 @@
 ***********************/
 
 .landing-block {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.landing-block .content-left {
+    padding-left: 0px;
+    padding-right: 4%;
+}
+
+.landing-block .content-right {
+    padding-left: 4%;
+    padding-right: 0px;
 }
 
 @media screen and (max-width:768px) {
     .landing-block {
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+
+    .content-left {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .content-right {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -189,9 +209,6 @@
     color: var(--gray-dark);
 }
 
-.mission-statement-image-container {
-    padding: 60px 4% 60px 0px;
-}
 
 .mission-statement-image {
     max-width: 100%;
@@ -199,17 +216,8 @@
     box-shadow: 0px 5px 60px 10px rgba(0, 0, 0, 0.2);
 }
 
-.mission-statement-text-container {
-    padding: 36px 0 60px 4%;
-}
-
-@media screen and (max-width:768px) {
-    .mission-statement-text-container {
-        padding: 40px 20px;
-    }
-    .mission-statement-image-container {
-        padding: 40px 20px;
-    }
+.mission-statement .content-right {
+    margin-top: -24px;
 }
 
 /* Teams */
@@ -422,6 +430,10 @@
 
 .community .my-text {
     color:black;
+}
+
+.community .content-left {
+    margin-top: -24px;
 }
 
 /* Featured in */
