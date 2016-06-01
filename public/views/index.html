@@ -32,36 +32,12 @@
 
 </head>
 <body ng-app="HurcSite" ng-controller="MainController">
-<!-- <div class="container"> -->
 
-    <!-- HEADER -->
-    <nav class="navbar navbar-default" id="my-navbar">
-        <div class="container my-navbar-container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle my-navbar-toggle" data-toggle="collapse" data-target="#my-navbar-right">
-                    <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                 </button>
-                <a class="navbar-brand my-navbar-buttons" href="/">
-                    <span><img src="../img/hurclogo.png"></span>
-                </a>
-            </div>
-
-            <!-- LINK TO OUR PAGES. ANGULAR HANDLES THE ROUTING HERE -->
-            <div class="collapse navbar-collapse" id="my-navbar-right">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="my-navbar-buttons tk-ubuntu" href="/projects">Projects</a></li>
-                    <li><a class="my-navbar-buttons tk-ubuntu" href="/gallery">Gallery</a></li>
-                    <li><a class="my-navbar-buttons tk-ubuntu" href="/contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    
+    <div ng-include="'/views/partials/navbar.html'"></div>
     <!-- ANGULAR DYNAMIC CONTENT -->
     <div ng-view></div>
 
-<!-- </div> -->
+    <div ng-include="'/views/partials/footer.html'"></div>
 </body>
 </html>
