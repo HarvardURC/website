@@ -1,10 +1,16 @@
 # website
 The new HURC website
 
-To run locally, install node and npm. Then
+To run locally, 
 
+*   Install Node and  npm:
+  * If you're on a Mac:
+    * first install brew by running '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+    * Then install node and npm by running 'brew install node && brew install npm'
+  * If you're on Linux:
+    * run 'sudo apt-get install node && sudo apt-get install npm'
 *   clone the repository
 *   run 'npm install'
 *   run 'npm start'
 
-The site should now be running locally on port 8080.
+The site should now be running at http://localhost:8080/
