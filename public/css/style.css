@@ -524,7 +524,20 @@
 .footer-link-collection li {
     display: inline;
     list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
+.footer-link-collection a:hover {
+    color: var(--crimson);
+    text-decoration: none;
+}
+
+.footer-link {
+    color: #000;
+    font-size: 18px;
+}
+
 
 #footer-bar{
     width: 90%;
