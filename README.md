@@ -13,4 +13,4 @@ To run locally,
 *   run 'npm install'
 *   run 'npm start'
 
-The site should now be running locally on port 8080.
+The site should now be running at http://localhost:8080/
