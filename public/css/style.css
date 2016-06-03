@@ -520,15 +520,11 @@
 .footer-container .footer-link-collection {
     padding-top: 80px; 
     padding-left: 0px;
+    width: 60%;
     display: inline-block;
     list-style-type: none;
-}
-
-.footer-link-collection li {
-    display: inline;
-    list-style-type: none;
-    margin-left: 20px;
-    margin-right: 20px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .footer-link-collection a:link {
