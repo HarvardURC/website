@@ -22,12 +22,6 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
         controller: 'MainController'
     })
 
-    // // Projects page
-    // .when('/projects', {
-    //     templateUrl: 'views/projects/projects.html',
-    //     controller: 'MainController'
-    // })
-
     // Mech Warfare page
     .when('/projects/mw', {
         templateUrl: 'views/projects/mw.html',
@@ -43,6 +37,12 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
     // UAS page
     .when('/projects/uas', {
         templateUrl: 'views/projects/uas.html',
+        controller: 'MainController'
+    })
+
+    // UAS page
+    .when('/sponsors', {
+        templateUrl: 'views/sponsors.html',
         controller: 'MainController'
     });
 

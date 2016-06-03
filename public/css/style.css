@@ -147,32 +147,32 @@
 *                     *
 ***********************/
 
-.landing-block {
+.block {
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
-.landing-block .content-left {
+.block .content-left {
     padding-left: 0px;
     padding-right: 4%;
 }
 
-.landing-block .content-right {
+.block .content-right {
     padding-left: 4%;
     padding-right: 0px;
 }
 
 @media screen and (max-width:768px) {
-    .landing-block {
+    .block {
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-    .content-left {
+    .block .content-left {
         padding: 20px !important;
     }
 
-    .content-right {
+    .block .content-right {
         padding: 20px !important;
     }
 }
@@ -386,13 +386,17 @@
 
 /* Projects intro */
 
-.projects-intro {
+.intro-block {
     background: url(../img/xbeeboard.jpg) no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 400px;
+}
+
+.projects-intro {
+    background: url(../img/xbeeboard.jpg) no-repeat fixed;
 }
 
 .text-container {
@@ -469,7 +473,6 @@
         padding: 0 30px;
         height: 100px;
     }
-
 
 /* Footer */
 
@@ -548,3 +551,32 @@
     text-align: center;
 }
 
+.sponsors .intro-block {
+    background: url(../img/xbeeboard.jpg) no-repeat fixed;
+}
+
+.sponsors .intro-block .my-text {
+    color: white;
+}
+
+.sponsors .intro-block .my-title {
+    color: white;
+    padding-top: 40px;
+}
+
+.sponsors .my-title {
+    color: var(--crimson);
+}
+
+.sponsors .my-text {
+    color: var(--gray-light);
+}
+
+.sponsors .call-to-action {
+    text-align: center;
+    background: var(--gray-lightest);
+}
+
+.sponsors .call-to-action .my-text{
+    color: var(--gray-dark);
+}
