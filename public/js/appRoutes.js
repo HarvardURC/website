@@ -10,6 +10,11 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
         controller: 'LandingController'
     })
 
+    .when('/landing', {
+        templateUrl: 'views/landing/landing.html',
+        controller: 'LandingController'
+    })
+
     // Contact page
     .when('/contact', {
         templateUrl: 'views/contact.html',
@@ -40,7 +45,7 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
         controller: 'MainController'
     })
 
-    // UAS page
+    // Sponsors page
     .when('/sponsors', {
         templateUrl: 'views/sponsors.html',
         controller: 'MainController'
