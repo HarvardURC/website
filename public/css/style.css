@@ -611,3 +611,38 @@
 .sponsors .tiers {
 
 }
+
+.contact . intro-block {
+    background: url(../img/fullteam.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: 57px;
+}
+
+.contact .glyphicon-envelope {
+    font-size: 300px;
+    color: var(--gray-light);
+    width: 100%;
+}
+
+.contact .block .my-text {
+    color: var(--gray-dark);
+}
+
+.contact .block .my-title {
+    color: var(--crimson);
+    font-size: 35px;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width:768px) {
+    .content-left {
+        text-align: center;
+    }
+    .content-right {
+        text-align: center;
+    }
+
+}

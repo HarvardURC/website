@@ -51,6 +51,12 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
         controller: 'MainController'
     });
 
+    // Signup page
+    .when('/sponsors', {
+        templateUrl: 'views/signup.html',
+        controller: 'SignupController'
+    });
+
 
 $locationProvider.html5Mode(true);
 
