@@ -519,6 +519,7 @@
     background-color: var(--gray-light);
     text-align: center;
     margin-bottom: 0;
+    overflow: hidden;
 }
 
 .footer-container .footer-link-collection {
@@ -569,11 +570,12 @@
 }
 
 .sponsors .intro-block {
-    background: url(../img/xbeeboard.jpg) no-repeat fixed;
+    background: url(../img/fullteam.jpg) no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position-y: 57px;
 }
 
 .sponsors .intro-block .my-text {
