@@ -13,6 +13,7 @@ module.exports = function(app) {
    // sample api route
    app.post('/api/signup', function(req, res) {
        spreadsheetService.submitApplication(req.body);
+       res.send("success");
    });
 
    // frontend routes =========================================================

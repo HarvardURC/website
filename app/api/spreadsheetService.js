@@ -22,6 +22,7 @@ SpreadsheetService.prototype.submitApplication = function(body) {
                 client_email: process.env.SHEETS_EMAIL,
                 private_key: process.env.SHEETS_KEY
             };
+            console.log(creds);
             self.doc.useServiceAccountAuth(creds, step);
         },
         function getInfoAndWorksheets(step) {
