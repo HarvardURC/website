@@ -22,10 +22,11 @@ SpreadsheetService.prototype.submitApplication = function(body) {
                 client_email: process.env.SHEETS_EMAIL,
                 private_key: process.env.SHEETS_KEY
             };
-            console.log(creds);
             self.doc.useServiceAccountAuth(creds, step);
+            console.log("a1");
         },
         function getInfoAndWorksheets(step) {
+            console.log("a2");
             self.doc.getInfo(function(err, info) {
                 console.log('Loaded doc: '+info.title+' by '+info.author.email);
                 sheet = info.worksheets[0];
@@ -42,6 +43,7 @@ SpreadsheetService.prototype.submitApplication = function(body) {
             });
         },
         function insertAppliation(step) {
+            console.log("a3");
             if (skip) {
                 step();
                 return;
