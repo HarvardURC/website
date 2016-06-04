@@ -1,5 +1,9 @@
 // public/js/controllers/ContactCtrl.js
 angular.module('ContactCtrl', [])
-.controller('ContactController', ['$scope', function($scope) {
+.controller('ContactController', function($http, $scope) {
 
-}]);
+    $scope.subscribe = function (application) {
+        return $http.post('/api/subscribe', application);
+    };
+
+});

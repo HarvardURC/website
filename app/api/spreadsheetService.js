@@ -3,12 +3,15 @@
 var GoogleSpreadsheet = require('google-spreadsheet');
 var async = require('async');
 var app = require('../../server').app;
+var api_config = require('../../config/api-config.json');
+var request = require("request");
 
 
 // Constructor
 function SpreadsheetService() {
-  this.doc = new GoogleSpreadsheet('1SdPgPIdjb6vwR7gx5VCRZv-27LmJ6cNpagm1Pl_WtCY');
+  this.doc = new GoogleSpreadsheet(api_config.application_doc);
 }
+
 // class methods
 SpreadsheetService.prototype.submitApplication = function(body) {
     console.log(body);
@@ -18,15 +21,10 @@ SpreadsheetService.prototype.submitApplication = function(body) {
     var curDate = (new Date()).toLocaleDateString();
     async.series([
         function setAuth(step) {
-            var creds = {
-                client_email: process.env.SHEETS_EMAIL,
-                private_key: process.env.SHEETS_KEY
-            };
+            var creds = require('../../config/hurc-web.json');
             self.doc.useServiceAccountAuth(creds, step);
-            console.log("a1");
         },
         function getInfoAndWorksheets(step) {
-            console.log("a2");
             self.doc.getInfo(function(err, info) {
                 console.log('Loaded doc: '+info.title+' by '+info.author.email);
                 sheet = info.worksheets[0];
@@ -43,7 +41,6 @@ SpreadsheetService.prototype.submitApplication = function(body) {
             });
         },
         function insertAppliation(step) {
-            console.log("a3");
             if (skip) {
                 step();
                 return;
@@ -64,6 +61,7 @@ SpreadsheetService.prototype.submitApplication = function(body) {
                     console.log('updating sheet failed with error ' + err);
                 }
                 else {
+                    self._sendMessageToSlack("A new person has sent an application. Check it out here: <https://docs.google.com/spreadsheets/d/1SdPgPIdjb6vwR7gx5VCRZv-27LmJ6cNpagm1Pl_WtCY/edit>")
                     console.log('Application submitted!');
                 }
             });
@@ -72,6 +70,30 @@ SpreadsheetService.prototype.submitApplication = function(body) {
         }
     ]);
 };
+
+SpreadsheetService.prototype._sendMessageToSlack = function(message) {
+    var data = {
+        "text" : message,
+        "username": "keithbot"
+    };
+    request({
+    url: api_config.slack_url,
+    method: "POST",
+    headers: {
+        "content-type": "application/json",
+        },
+    json: true,
+    body: data
+    }, function (err, resp, body) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("Slack responded with code: " + resp.statusCode);
+            console.log(resp.body);
+        }
+    });
+};
+
 
 // export the class
 module.exports = SpreadsheetService;

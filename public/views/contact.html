@@ -45,4 +45,47 @@
             </div>
         </div>
     </section>
+    <section class="my-form block">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 content-left">
+                    <div class="my-title">
+                        <h>MAILING LIST</h>
+                    </div>
+                    <div class="my-text">
+                        <p>Subscribe to our mailing list to receive info about our club events.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 content-right"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 content-left my-text">
+                    <form>
+                        <fieldset class="form-group">
+                            <label class="form-control-label" for="mailingFormFirstName">First Name</label>
+                            <input type="text" class="form-control" ng-model="application.first_name" id="mailingFormFirstName" placeholder="First Name" required>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="mailingFormLastName">Last Name</label>
+                            <input type="text" class="form-control" ng-model="application.last_name" id="mailingFormLastName" placeholder="Last Name" required>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="mailingFormEmail">Email</label>
+                            <input type="email" class="form-control" ng-model="application.email" id="mailingFormEmail" placeholder="Email" required>
+                        </fieldset>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <button type="submit" ng-click="subscribe(application)" class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-6 content-right">
+                    <div class="col-xs-12 picture">
+                        <!-- <img class="mission-statement-image" src="../img/hackathonator.jpg" alt="HURC team"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>

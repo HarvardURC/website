@@ -61,7 +61,7 @@
             </div>
         </div>
     </section>
-    <section class="signup-form block">
+    <section class="my-form block">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 content-left">
@@ -79,19 +79,19 @@
                     <form>
                         <fieldset class="form-group">
                             <label class="form-control-label" for="signUpFormFirstName">First Name</label>
-                            <input type="text" class="form-control" ng-model="application.first_name" id="signUpFormFirstName" placeholder="First Name">
+                            <input type="text" class="form-control" ng-model="application.first_name" id="signUpFormFirstName" placeholder="First Name" required>
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormLastName">Last Name</label>
-                            <input type="text" class="form-control" ng-model="application.last_name" id="signUpFormLastName" placeholder="Last Name">
+                            <input type="text" class="form-control" ng-model="application.last_name" id="signUpFormLastName" placeholder="Last Name" required>
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormEmail">Email</label>
-                            <input type="email" class="form-control" ng-model="application.email" id="signUpFormEmail" placeholder="Email">
+                            <input type="email" class="form-control" ng-model="application.email" id="signUpFormEmail" placeholder="Email" required>
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormClass">Class of...</label>
-                            <select class="form-control" ng-model="application.class" id="signUpFormClass">
+                            <select class="form-control" ng-model="application.class" id="signUpFormClass" required>
                                 <option>2017</option>
                                 <option>2018</option>
                                 <option>2019</option>
@@ -101,15 +101,15 @@
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormConcentration">Concentration</label>
-                            <input type="text" class="form-control" ng-model="application.concentration" id="signUpFormConcentration" placeholder="Concentration">
+                            <input type="text" class="form-control" ng-model="application.concentration" id="signUpFormConcentration" placeholder="Concentration" required>
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormBackground">Previous robotics experience</label>
-                            <textarea class="form-control" ng-model="application.background"id="signUpFormBackground" rows="3" placeholder="Previous robotics experience"></textarea>
+                            <textarea class="form-control" ng-model="application.background"id="signUpFormBackground" rows="3" placeholder="Previous robotics experience" required></textarea>
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormFirst">1st choice project</label>
-                            <select class="form-control" ng-model="application.first_choice" id="signUpFormFirst">
+                            <select class="form-control" ng-model="application.first_choice" id="signUpFormFirst" required>
                                 <option></option>
                                 <option>UAS</option>
                                 <option>Mech Warfare</option>
@@ -118,7 +118,7 @@
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormSecond">2nd choice project</label>
-                            <select class="form-control" ng-model="application.second_choice" id="signUpFormSecond">
+                            <select class="form-control" ng-model="application.second_choice" id="signUpFormSecond" required>
                                 <option></option>
                                 <option>UAS</option>
                                 <option>Mech Warfare</option>
@@ -127,7 +127,7 @@
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormThird">3rd choice project</label>
-                            <select class="form-control"ng-model="application.third_choice" id="signUpFormThird">
+                            <select class="form-control"ng-model="application.third_choice" id="signUpFormThird" required>
                                 <option></option>
                                 <option>UAS</option>
                                 <option>Mech Warfare</option>
@@ -136,7 +136,7 @@
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormReason">Why is this your choice?</label>
-                            <textarea class="form-control" ng-model="application.reason" id="signUpFormReason" rows="3" placeholder="Why is this your choice?"></textarea>
+                            <textarea class="form-control" ng-model="application.reason" id="signUpFormReason" rows="3" placeholder="Why is this your choice?" required></textarea>
                         </fieldset>
                         <div class="row">
                             <div class="col-sm-12 col-md-6">

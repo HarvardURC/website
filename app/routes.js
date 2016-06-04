@@ -3,6 +3,8 @@
 var path = require('path');
 var SpreadsheetService = require('./api/spreadsheetService');
 var spreadsheetService = new SpreadsheetService();
+var MailchimpService = require('./api/mailchimpService');
+var mailchimpService = new MailchimpService();
 
 module.exports = function(app) {
 
@@ -10,9 +12,15 @@ module.exports = function(app) {
    // handle things like api calls
    // authentication routes
 
-   // sample api route
+   // api route for submitting applications
    app.post('/api/signup', function(req, res) {
        spreadsheetService.submitApplication(req.body);
+       res.send("success");
+   });
+
+   // api route for subscribing to mailing list
+   app.post('/api/subscribe', function(req, res) {
+       mailchimpService.subscribeFromForm(req.body);
        res.send("success");
    });
 

@@ -82,6 +82,37 @@
     font-size: 30px;
 }
 
+/* Forms */
+
+.my-form .my-title {
+    color: var(--crimson);
+}
+
+.my-form .my-text {
+    color: var(--gray-light);
+}
+
+.my-form label {
+    font-size: 16px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.my-form button {
+    width: 100%;
+    font-size: 24px;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.form-control {
+    font-size: 20px;
+    height: 50px;
+}
+
+.my-form .picture {
+    padding: 20px;
+}
 
 /* Navbar */
 #my-navbar {
@@ -573,6 +604,8 @@
     padding-bottom: 20px;
 }
 
+/* Sponsors */
+
 .sponsors .intro-block {
     background: url(../img/fullteam.jpg) no-repeat fixed;
     -webkit-background-size: cover;
@@ -624,6 +657,8 @@
     color: var(--gray-dark);
 }
 
+/* Contact */
+
 .contact .intro-block {
     background: url(../img/soldering.jpg) no-repeat fixed;
     -webkit-background-size: cover;
@@ -663,6 +698,8 @@
 
 }
 
+/* Signup */
+
 .signup .signup-process .my-title {
     color: var(--crimson);
 }
@@ -681,36 +718,6 @@
 
 .signup .signup-process .my-text {
     color: var(--gray-light);
-}
-
-.signup .signup-form .my-title {
-    color: var(--crimson);
-}
-
-.signup .signup-form .my-text {
-    color: var(--gray-light);
-}
-
-.signup .signup-form label {
-    font-size: 16px;
-    margin-top: 7px;
-    margin-bottom: 10px;
-}
-
-.signup .signup-form button {
-    width: 100%;
-    font-size: 24px;
-    padding: 12px;
-    margin-top: 10px;
-}
-
-.form-control {
-    font-size: 20px;
-    height: 50px;
-}
-
-.signup .picture {
-    padding: 20px;
 }
 
 .signup .intro-block {
