@@ -49,10 +49,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
     .when('/sponsors', {
         templateUrl: 'views/sponsors.html',
         controller: 'MainController'
-    });
+    })
 
     // Signup page
-    .when('/sponsors', {
+    .when('/signup', {
         templateUrl: 'views/signup.html',
         controller: 'SignupController'
     });

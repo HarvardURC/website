@@ -646,3 +646,40 @@
     }
 
 }
+
+.signup .signup-process .my-title {
+    color: var(--crimson);
+}
+
+.signup .signup-process .my-text {
+    color: var(--gray-light);
+}
+
+.signup .recruitment {
+    background: var(--gray-lightest);
+}
+
+.signup .signup-process .my-title {
+    color: var(--crimson);
+}
+
+.signup .signup-process .my-text {
+    color: var(--gray-light);
+}
+
+.signup .signup-form .my-title {
+    color: var(--crimson);
+}
+
+.signup .signup-form .my-text {
+    color: var(--gray-light);
+}
+
+.form-control {
+    font-size: 20px;
+    height: 50px;
+}
+
+.signup .picture {
+    padding: 20px;
+}
