@@ -20,6 +20,8 @@
     "express": "~4.13.4",
     "mongoose": "~4.4.19",
     "method-override": "~2.3.6",
-    "body-parser": "~1.15.1"
+    "body-parser": "~1.15.1",
+    "google-spreadsheet": "~2.0.3",
+    "async": "~2.0.0-rc.5"
   }
 }

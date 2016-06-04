@@ -1,7 +1,8 @@
-
 // app/routes.js
 
 var path = require('path');
+var spreadsheetService = require('/api/spreadsheetService');
+
 
 module.exports = function(app) {
 
@@ -11,7 +12,7 @@ module.exports = function(app) {
 
    // sample api route
    app.post('/api/signup', function(req, res) {
-       
+       spreadsheetService.submitApplication(req);
    });
 
    // frontend routes =========================================================

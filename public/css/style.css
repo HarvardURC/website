@@ -554,6 +554,10 @@
     font-weight: 500;
 }
 
+.footer-glyph {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 .footer-bar{
     width: 90%;
@@ -620,13 +624,17 @@
     color: var(--gray-dark);
 }
 
-.contact . intro-block {
-    background: url(../img/fullteam.jpg) no-repeat fixed;
+.contact .intro-block {
+    background: url(../img/soldering.jpg) no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position-y: 57px;
+    background-position-y: -160px;
+}
+
+.contact  .intro-block .my-title {
+    padding-top: 40px;
 }
 
 .contact .glyphicon-envelope {
@@ -703,4 +711,16 @@
 
 .signup .picture {
     padding: 20px;
+}
+
+.signup .intro-block {
+    background: url(../img/hackathondiscuss.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.signup .intro-block .my-title {
+    padding-top: 40px;
 }

@@ -51,7 +51,7 @@
                         BACKGROUND
                     </div>
                     <div class="my-text">
-                        Suggested concurrent or previous study in any of the following
+                        Suggested concurrent or previous study in any of the following:
                         <div><span class = "crimson">ME:</span><span> ES51</span></div>
                         <div><span class = "crimson">EE:</span><span> ES50 / ES52</span></div>
                         <div><span class = "crimson">CS:</span><span> CS50 / CS51 / CS61</span></div>
@@ -79,19 +79,19 @@
                     <form>
                         <fieldset class="form-group">
                             <label class="form-control-label" for="signUpFormFirstName">First Name</label>
-                            <input type="text" class="form-control" id="signUpFormFirstName" placeholder="First Name">
+                            <input type="text" class="form-control" ng-model="application.first_name" id="signUpFormFirstName" placeholder="First Name">
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormLastName">Last Name</label>
-                            <input type="text" class="form-control" id="signUpFormLastName" placeholder="Last Name">
+                            <input type="text" class="form-control" ng-model="application.last_name" id="signUpFormLastName" placeholder="Last Name">
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormEmail">Email</label>
-                            <input type="email" class="form-control" id="signUpFormEmail" placeholder="Email">
+                            <input type="email" class="form-control" ng-model="application.email" id="signUpFormEmail" placeholder="Email">
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormClass">Class of...</label>
-                            <select class="form-control" id="signUpFormClass">
+                            <select class="form-control" ng-model="application.class" id="signUpFormClass">
                                 <option>2017</option>
                                 <option>2018</option>
                                 <option>2019</option>
@@ -101,15 +101,15 @@
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormConcentration">Concentration</label>
-                            <input type="text" class="form-control" id="signUpFormConcentration" placeholder="Concentration">
+                            <input type="text" class="form-control" ng-model="application.concentration" id="signUpFormConcentration" placeholder="Concentration">
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormBackground">Previous robotics experience</label>
-                            <textarea class="form-control" id="signUpFormBackground" rows="3" placeholder="Previous robotics experience"></textarea>
+                            <textarea class="form-control" ng-model="application.background"id="signUpFormBackground" rows="3" placeholder="Previous robotics experience"></textarea>
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormFirst">1st choice project</label>
-                            <select class="form-control" id="signUpFormFirst">
+                            <select class="form-control" ng-model="application.first_choice" id="signUpFormFirst">
                                 <option></option>
                                 <option>UAS</option>
                                 <option>Mech Warfare</option>
@@ -118,7 +118,7 @@
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormSecond">2nd choice project</label>
-                            <select class="form-control" id="signUpFormSecond">
+                            <select class="form-control" ng-model="application.second_choice" id="signUpFormSecond">
                                 <option></option>
                                 <option>UAS</option>
                                 <option>Mech Warfare</option>
@@ -127,7 +127,7 @@
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormThird">3rd choice project</label>
-                            <select class="form-control" id="signUpFormThird">
+                            <select class="form-control"ng-model="application.third_choice" id="signUpFormThird">
                                 <option></option>
                                 <option>UAS</option>
                                 <option>Mech Warfare</option>
@@ -136,24 +136,24 @@
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="signUpFormReason">Why is this your choice?</label>
-                            <textarea class="form-control" id="signUpFormReason" rows="3" placeholder="Why is this your choice?"></textarea>
+                            <textarea class="form-control" ng-model="application.reason" id="signUpFormReason" rows="3" placeholder="Why is this your choice?"></textarea>
                         </fieldset>
                         <div class="row">
                             <div class="col-sm-12 col-md-6">
-                                <button type="submit" class="btn btn-primary">Apply</button>
+                                <button type="submit" ng-click="apply(application)" class="btn btn-primary">Apply</button>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="col-sm-12 col-md-6 content-right">
                     <div class="col-xs-12 picture">
-                        <img class="mission-statement-image" src="../img/community.jpg" alt="HURC team">
+                        <img class="mission-statement-image" src="../img/hackathonator.jpg" alt="HURC team">
                     </div>
                     <div class="col-xs-12 picture">
-                        <img class="mission-statement-image" src="../img/community.jpg" alt="HURC team">
+                        <img class="mission-statement-image" src="../img/coders.jpg" alt="HURC team">
                     </div>
                     <div class="col-xs-12 picture">
-                        <img class="mission-statement-image" src="../img/community.jpg" alt="HURC team">
+                        <img class="mission-statement-image" src="../img/flyingdrone.jpg" alt="HURC team">
                     </div>
                 </div>
             </div>
