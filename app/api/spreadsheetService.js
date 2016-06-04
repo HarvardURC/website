@@ -18,7 +18,10 @@ SpreadsheetService.prototype.submitApplication = function(body) {
     var curDate = (new Date()).toLocaleDateString();
     async.series([
         function setAuth(step) {
-            var creds = require('../../config/hurc-web.json');
+            var creds = {
+                client_email: ENV['SHEETS_EMAIL'],
+                private_key: ENV['SHEETS_KEY']
+            };
             self.doc.useServiceAccountAuth(creds, step);
         },
         function getInfoAndWorksheets(step) {
