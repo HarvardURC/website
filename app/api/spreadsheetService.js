@@ -19,8 +19,8 @@ SpreadsheetService.prototype.submitApplication = function(body) {
     async.series([
         function setAuth(step) {
             var creds = {
-                client_email: ENV['SHEETS_EMAIL'],
-                private_key: ENV['SHEETS_KEY']
+                client_email: process.env.SHEETS_EMAIL,
+                private_key: process.env.SHEETS_KEY
             };
             self.doc.useServiceAccountAuth(creds, step);
         },
