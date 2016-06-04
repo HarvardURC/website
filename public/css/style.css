@@ -604,12 +604,20 @@
     color: var(--gray-dark);
 }
 
-.sponsors .call-to-action .my-text{
+.sponsors .call-to-action .my-text {
     color: var(--gray-dark);
 }
 
-.sponsors .tiers {
+.sponsors .tiers .my-text h2 {
+    color: var(--gray-dark);
+}
 
+.sponsors .tiers .contact-container {
+    color: var(--crimson);
+}
+
+.sponsors .tiers p {
+    color: var(--gray-dark);
 }
 
 .contact . intro-block {
