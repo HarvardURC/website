@@ -84,7 +84,7 @@
 
 .video-responsive{
     overflow:hidden;
-    padding-bottom:56.25%;
+    padding-bottom:51.25%;
     position:relative;
     height:0;
 }
@@ -99,6 +99,10 @@
 @media screen and (min-width:1270px) {
     .video-responsive iframe{
         height:90vh;
+    }
+
+    .video-container {
+        height: 90vh;
     }
 }
 
