@@ -1,0 +1,7 @@
+{
+    "slack_url" : "https://hooks.slack.com/services/",
+    "application_doc" : "aaa",
+    "mailchimp_url" :  "https://us9.api.mailchimp.com/2.0/lists/subscribe.json",
+    "mailchimp_list" : "aaa",
+    "mailchimp_key" : "aaaa-us9"
+}
