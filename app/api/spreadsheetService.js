@@ -55,7 +55,8 @@ SpreadsheetService.prototype.submitApplication = function(body) {
                           'First choice' : body.first_choice,
                           'Second choice' : body.second_choice,
                           'Third choice' : body.third_choice,
-                          'Reasoning': body.reason}, function (err) {
+                          'Reasoning': body.reason,
+                          'Why do you want to join?' : body.why}, function (err) {
 
                 if(err) {
                     console.log('updating sheet failed with error ' + err);

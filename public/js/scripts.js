@@ -1,9 +1,9 @@
 function scrollToProjects() {
-    document.getElementById('projects').scrollIntoView();
+    document.getElementById('projects').scrollIntoView(true);
 }
 
 function scrollToTop() {
-    document.getElementById('top').scrollIntoView();
+    document.getElementById('top').scrollIntoView(true);
 }
 
 $(document).on('click','.navbar-collapse.in',function(e) {

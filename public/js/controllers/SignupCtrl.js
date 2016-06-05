@@ -14,11 +14,16 @@ angular.module('SignupCtrl', [])
             application.third_choice &&
             application.class &&
             application.reason &&
-            application.background) {
+            application.background &&
+            application.why) {
                 $scope.isSuccess = true;
                 $scope.button_text = "Submitted";
                 return $http.post('/api/signup', application);
             }
     };
+
+    $scope.init = function () {
+        scrollToTop();
+    }
 
 });

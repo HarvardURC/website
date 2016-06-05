@@ -2,4 +2,8 @@
 angular.module('LandingCtrl', [])
 .controller('LandingController', ['$scope', function($scope) {
 
+    $scope.init = function () {
+        scrollToTop();
+    }
+
 }]);

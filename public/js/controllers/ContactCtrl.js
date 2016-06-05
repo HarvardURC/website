@@ -15,6 +15,10 @@ angular.module('ContactCtrl', [])
             }
     };
 
+    $scope.init = function () {
+        scrollToTop();
+    }
+
 
 
 });

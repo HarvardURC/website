@@ -10,9 +10,9 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
         controller: 'LandingController'
     })
 
-    .when('/landing', {
+    .when('/projects', {
         templateUrl: 'views/landing/landing.html',
-        controller: 'LandingController'
+        controller: 'ProjectsController'
     })
 
     // Contact page
