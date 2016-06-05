@@ -13,7 +13,7 @@
             </div>
         </div>
     </section>
-    <section class="signup-process block">
+    <section class="white-crimson block">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 content-left">
@@ -35,7 +35,7 @@
             </div>
         </div>
     </section>
-    <section class="recruitment block">
+    <section class="recruitment block gray-gray">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 content-left">
@@ -43,7 +43,7 @@
                         WHO WE NEED
                     </div>
                     <div class="my-text">
-                        We are looking for undergraduate students with a passion for creative design; technical skill in coding, circuitry, or mechanical design; and people seeking to learn new engineering skills while applying what they have learned from Harvard SEAS classes.
+                        We are looking for aspiring roboticists who are passionate and eager to learn. Each week, club members are expected to attend an hour-long team meeting and to spend 3-8 hours working on building, design, or research.
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 content-right">
@@ -140,7 +140,7 @@
                         </fieldset>
                         <div class="row">
                             <div class="col-sm-12 col-md-6">
-                                <button type="submit" ng-click="apply(application)" class="btn btn-primary">Apply</button>
+                                <button type="submit" ng-click="apply(application)" ng-class="{'btn-success': isSuccess}" class="btn btn-primary">{{button_text}}</button>
                             </div>
                         </div>
                     </form>

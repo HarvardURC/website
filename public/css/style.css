@@ -82,6 +82,72 @@
     font-size: 30px;
 }
 
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.gray-crimson {
+    background: var(--gray-lightest);
+}
+
+.white-gray {
+    background: white;
+}
+
+.white-crimson {
+    background: white;
+}
+
+.gray-gray {
+    background: var(--gray-lightest);
+}
+
+.gray-gray .my-title {
+    color: var(--gray-light);
+}
+
+.gray-gray .my-text {
+    color: var(--gray-dark);
+}
+
+.gray-crimson .my-title {
+    color: var(--crimson);
+}
+
+.gray-crimson .my-text {
+    color: var(--gray-dark);
+}
+
+.white-gray .my-title {
+    color: var(--gray-light);
+}
+
+.white-gray .my-text {
+    color: var(--gray-dark);
+}
+
+.white-crimson .my-title {
+    color: var(--crimson);
+}
+
+.white-crimson .my-text {
+    color: var(--gray-dark);
+}
+
+.crimson {
+    color: var(--crimson);
+}
+
 /* Forms */
 
 .my-form .my-title {
@@ -184,13 +250,13 @@
 }
 
 .block .content-left {
-    padding-left: 0px;
+    padding-left: 15px;
     padding-right: 4%;
 }
 
 .block .content-right {
     padding-left: 4%;
-    padding-right: 0px;
+    padding-right: 15px;
 }
 
 @media screen and (max-width:992px) {
@@ -206,6 +272,23 @@
     .block .content-right {
         padding: 20px !important;
     }
+
+    .block .content-full {
+        padding: 20px !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .content-left {
+        text-align: center;
+    }
+    .content-right {
+        text-align: center;
+    }
+    .content-full {
+        text-align: center;
+    }
+
 }
 
 
@@ -338,7 +421,7 @@
     }
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:992px) {
     .dont-show{
         font-size: 20;
     }
@@ -402,18 +485,6 @@
 
 /* Recruitment */
 
-.recruitment {
-
-}
-
-.recruitment .my-title{
-    color: var(--gray-light);
-}
-
-.recruitment .my-text{
-    color: var(--gray-dark);
-}
-
 
 /* Projects intro */
 
@@ -450,31 +521,11 @@
 
 /* Community */
 
-.community {
-    background: var(--gray-lightest);
-}
-
-.community .my-title {
-    color: var(--crimson);
-}
-
-.community .my-text {
-    color: var(--gray-dark);
-}
-
 .community .content-left {
     margin-top: -24px;
 }
 
 /* Featured in */
-
-.featured-in .my-title {
-    color: var(--crimson);
-}
-
-.featured-in .my-text {
-    color: var(--gray-dark);
-}
 
 .featured-col {
     padding: 20px;
@@ -688,36 +739,10 @@
     padding-bottom: 0;
 }
 
-@media screen and (max-width:768px) {
-    .content-left {
-        text-align: center;
-    }
-    .content-right {
-        text-align: center;
-    }
-
-}
-
 /* Signup */
-
-.signup .signup-process .my-title {
-    color: var(--crimson);
-}
-
-.signup .signup-process .my-text {
-    color: var(--gray-light);
-}
 
 .signup .recruitment {
     background: var(--gray-lightest);
-}
-
-.signup .signup-process .my-title {
-    color: var(--crimson);
-}
-
-.signup .signup-process .my-text {
-    color: var(--gray-light);
 }
 
 .signup .intro-block {
@@ -730,4 +755,29 @@
 
 .signup .intro-block .my-title {
     padding-top: 40px;
+}
+
+
+/* Mech Warfare */
+
+
+@media screen and (max-width:992px) {
+    .picture-div {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .picture-row {
+        padding-bottom: 30px;
+    }
+}
+
+.mechwarfare .intro-block {
+    background: url(../img/mw/mw-allrobots.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
