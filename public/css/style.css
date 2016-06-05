@@ -96,6 +96,12 @@
     position:absolute;
 }
 
+@media screen and (min-width:1270px) {
+    .video-responsive iframe{
+        height:90vh;
+    }
+}
+
 .gray-crimson {
     background: var(--gray-lightest);
 }
