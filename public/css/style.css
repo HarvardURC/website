@@ -779,5 +779,10 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: right;
 
+}
+
+.mechwarfare .intro-block .my-title{
+    padding-top: 40px;
 }
