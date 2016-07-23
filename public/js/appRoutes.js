@@ -45,9 +45,9 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
         controller: 'MainController'
     })
 
-    // Sponsors page
-    .when('/sponsors', {
-        templateUrl: 'views/sponsors.html',
+    // Supporters page
+    .when('/supporters', {
+        templateUrl: 'views/supporters.html',
         controller: 'MainController'
     })
 
@@ -58,6 +58,6 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
     });
 
 
-$locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
 
 }]);

@@ -455,6 +455,10 @@
     .teams-project-button {
         font-size: 20px;
     }
+
+    .teams-project-inner-container .my-title {
+        font-size: 38px;
+    }
 }
 
 .teams-project-button:hover {
@@ -670,9 +674,9 @@
     padding-bottom: 20px;
 }
 
-/* Sponsors */
+/* supporters */
 
-.sponsors .intro-block {
+.supporters .intro-block {
     background: url(../img/fullteam.jpg) no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -681,46 +685,66 @@
     background-position-y: 57px;
 }
 
-.sponsors .intro-block .my-text {
+.supporters .intro-block .my-text {
     color: white;
 }
 
-.sponsors .intro-block .my-title {
+.supporters .intro-block .my-title {
     color: white;
     padding-top: 40px;
 }
 
-.sponsors .my-title {
+.supporters .my-title {
     color: var(--crimson);
 }
 
-.sponsors .my-text {
-    color: var(--gray-light);
+.supporters .my-text {
+    color: var(--gray-dark);
 }
 
-.sponsors .call-to-action {
+.supporters .call-to-action {
     text-align: center;
     background: var(--gray-lightest);
 }
 
-.sponsors .call-to-action .my-title {
+.supporters .call-to-action .my-title {
     color: var(--gray-dark);
 }
 
-.sponsors .call-to-action .my-text {
+.supporters .call-to-action .my-text {
     color: var(--gray-dark);
 }
 
-.sponsors .tiers .my-text h2 {
+.supporters .tiers .my-text h2 {
     color: var(--gray-dark);
+    margin-bottom: 20px;
 }
 
-.sponsors .tiers .contact-container {
+.supporters .tiers .contact-container {
     color: var(--crimson);
 }
 
-.sponsors .tiers p {
-    color: var(--gray-dark);
+.supporters li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.supporters .extra-info {
+    margin-top: 20px;
+    color: var(--gray-dark) !important;
+}
+
+.supporters .tier-info p {
+    font-weight: 700;
+}
+
+.supporters .tier-info span {
+    color: var(--crimson);
+}
+
+.supporters .tier-logo {
+    padding-top: 10px;
+    text-align: center;
 }
 
 /* Contact */
