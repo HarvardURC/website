@@ -730,11 +730,12 @@
 }
 
 .supporters .extra-info {
-    margin-top: 20px;
+    margin-top: 40px;
     color: var(--gray-dark) !important;
 }
 
 .supporters .tier-info p {
+    margin-top: 20px;
     font-weight: 700;
 }
 
@@ -742,9 +743,17 @@
     color: var(--crimson);
 }
 
-.supporters .tier-logo {
-    padding-top: 10px;
+.supporters .tier-logo h2 {
     text-align: center;
+    font-weight: 700;
+}
+
+.supporters .tier-logo img {
+    width: 100%;
+}
+
+.supporters .tier-row {
+    margin-top: 40px;
 }
 
 /* Contact */
