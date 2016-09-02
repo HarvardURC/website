@@ -1,0 +1,98 @@
+<div class="contact">
+    <section class="intro-block" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-container">
+                    <div class="my-title">
+                        <h>CONTACT</h>
+                    </div>
+                    <div class="my-text">
+                        Get in touch with us!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 content-left">
+                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                </div>
+                <div class="col-xs-12 col-sm-6 content-right">
+                    <div class="col-sm-12">
+                        <div class="my-title">
+                            <p>
+                                CLUB EMAIL
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="my-text">
+                            <p>
+                                <a href="mailto:hurc-board@harvardrobotics.org">hurc-board@harvardrobotics.org</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="my-text">
+                            <p>
+                                We check this email daily.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-form block">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 content-left">
+                    <div class="my-title">
+                        <h>MAILING LIST</h>
+                    </div>
+                    <div class="my-text">
+                        <p>Subscribe to our mailing list to receive info about our club events.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 content-right"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 content-left my-text">
+                    <form>
+                        <fieldset class="form-group">
+                            <label class="form-control-label" for="mailingFormFirstName">First Name</label>
+                            <input type="text" class="form-control" ng-model="vm.application.first_name" id="mailingFormFirstName" placeholder="First Name" required>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="mailingFormLastName">Last Name</label>
+                            <input type="text" class="form-control" ng-model="vm.application.last_name" id="mailingFormLastName" placeholder="Last Name" required>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="mailingFormEmail">Email</label>
+                            <input type="email" class="form-control" ng-model="vm.application.email" id="mailingFormEmail" placeholder="Email" required>
+                        </fieldset>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <button
+                                  type="submit"
+                                  ng-click="vm.subscribe()"
+                                  ng-class="{'btn-success': vm.isSuccess}"
+                                  ng-disabled="vm.isSuccess"
+                                  class="btn btn-primary">
+                                {{vm.button_text}}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-6 content-right">
+                    <div class="col-xs-12 picture">
+                        <!-- <img class="mission-statement-image" src="../img/hackathonator.jpg" alt="HURC team"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

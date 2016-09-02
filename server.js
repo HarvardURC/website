@@ -9,9 +9,6 @@ var favicon        = require('serve-favicon');
 
 // configuration ===========================================
 
-// config files
-var db = require('./config/db');
-
 // set our port
 var port = process.env.PORT || 8080;
 
@@ -23,7 +20,7 @@ var port = process.env.PORT || 8080;
 // parse application/json
 app.use(bodyParser.json());
 
-app.use(favicon(__dirname + '/public/img/hurclogo.png'));
+app.use(favicon(__dirname + '/dist/img/hurclogo.png'));
 
 // parse application/vnd.api+json as json
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
@@ -35,7 +32,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride('X-HTTP-Method-Override'));
 
 // set the static files location /public/img will be /img for users
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/dist'));
 
 // routes ==================================================
 require('./app/routes')(app); // configure our routes

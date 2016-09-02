@@ -1,0 +1,37 @@
+<!-- public/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+
+    <title>Harvard Undergraduate Robotics Club</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css" type="text/css" charset="utf-8" >
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" type="text/css" charset="utf-8" >
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" charset="utf-8" >
+    <link rel="stylesheet" href="libs/roboto_light/stylesheet.css" type="text/css" charset="utf-8" />
+
+    <!-- JS -->
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="js/bundle.js"></script>
+
+    <!-- FONTS -->
+    <script src="https://use.typekit.net/fkw0zqm.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+<body ng-app="HurcSite">
+
+    <div ng-include="'/views/partials/navbar.html'"></div>
+    <!-- ANGULAR DYNAMIC CONTENT -->
+    <div ui-view></div>
+
+    <div ng-include="'/views/partials/footer.html'"></div>
+</body>
+</html>

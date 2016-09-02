@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default" id="my-navbar" ng-controller="NavbarController as vm">
+    <div class="container my-navbar-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle my-navbar-toggle" data-toggle="collapse" data-target="#my-navbar-right">
+                <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+            <a class="navbar-brand my-navbar-buttons" href="/" onclick="scrollToTop()">
+                <span><img src="../img/hurclogo.png"></span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-responsive-collapse" id="my-navbar-right">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="my-navbar-buttons tk-ubuntu" href="/projects"  ng-click="vm.scrollToProjects()">Projects</a></li>
+                <li><a class="my-navbar-buttons tk-ubuntu" href="/supporters" ng-click="vm.scrollToTop()">Supporters</a></li>
+                <li><a class="my-navbar-buttons tk-ubuntu" href="/signup" ng-click="vm.scrollToTop()">Sign up</a></li>
+                <li><a class="my-navbar-buttons tk-ubuntu" href="/contact" ng-click="vm.scrollToTop()">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
