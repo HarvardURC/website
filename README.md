@@ -15,4 +15,4 @@ To run locally,
 * run `gulp build-images`
 * run `npm start`
 
-The site should now be running at http://localhost:8080/
+The site should now be running at http://localhost:80/

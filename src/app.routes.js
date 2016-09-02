@@ -2,10 +2,10 @@
 
 let routes = ($stateProvider, $urlRouterProvider, $locationProvider) => {
   $locationProvider.html5Mode(true);
-  $urlRouterProvider.otherwise('index');
+  $urlRouterProvider.otherwise('/');
 
   $stateProvider
-    .state('index', {
+    .state('/', {
       url: '/',
       templateUrl: './views/landing/landing.html',
       controller: 'LandingController'
