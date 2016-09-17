@@ -13,6 +13,6 @@ To run locally,
 * clone the repository
 * run `npm install`
 * run `gulp build-images`
-* run `npm start`
+* run `sudo npm start`
 
 The site should now be running at http://localhost:80/

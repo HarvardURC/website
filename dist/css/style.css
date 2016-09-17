@@ -1,16 +1,6 @@
 
 /* public/css/styles.css */
 
-/* Color variables */
-:root {
-  --crimson: #A51C30;
-  --gray-light: #999999;
-  --gray-dark: #444444;
-  --gray-darkest: #202020;
-  --gray-lightest: #F2F5F7;
-}
-
-
 /* Text types */
 
 .my-title {
@@ -67,7 +57,7 @@
 }
 
 .my-text .crimson {
-    color: var(--crimson);
+    color: #A51C30;
 }
 
 .scroll-glyph {
@@ -107,7 +97,7 @@
 }
 
 .gray-crimson {
-    background: var(--gray-lightest);
+    background: #F2F5F7;
 }
 
 .white-gray {
@@ -119,53 +109,53 @@
 }
 
 .gray-gray {
-    background: var(--gray-lightest);
+    background: #F2F5F7;
 }
 
 .gray-gray .my-title {
-    color: var(--gray-light);
+    color: #999999;
 }
 
 .gray-gray .my-text {
-    color: var(--gray-dark);
+    color: #444444;
 }
 
 .gray-crimson .my-title {
-    color: var(--crimson);
+    color: #A51C30;
 }
 
 .gray-crimson .my-text {
-    color: var(--gray-dark);
+    color: #444444;
 }
 
 .white-gray .my-title {
-    color: var(--gray-light);
+    color: #999999;
 }
 
 .white-gray .my-text {
-    color: var(--gray-dark);
+    color: #444444;
 }
 
 .white-crimson .my-title {
-    color: var(--crimson);
+    color: #A51C30;
 }
 
 .white-crimson .my-text {
-    color: var(--gray-dark);
+    color: #444444;
 }
 
 .crimson {
-    color: var(--crimson);
+    color: #A51C30;
 }
 
 /* Forms */
 
 .my-form .my-title {
-    color: var(--crimson);
+    color: #A51C30;
 }
 
 .my-form .my-text {
-    color: var(--gray-light);
+    color: #999999;
 }
 
 .my-form label {
@@ -193,7 +183,7 @@
 /* Navbar */
 #my-navbar {
     margin-bottom: 0px;
-    background-color: var(--gray-darkest);
+    background-color: #202020;
     border-width: 0px;
     border-radius: 0px;
     position: fixed;
@@ -210,7 +200,7 @@
 }
 
 #my-navbar li:hover {
-    background-color: var(--crimson);
+    background-color: #A51C30;
 }
 
 .my-navbar-container {
@@ -328,11 +318,11 @@
 }
 
 .mission-statement .my-title {
-    color: var(--crimson);
+    color: #A51C30;
 }
 
 .mission-statement .my-text{
-    color: var(--gray-dark);
+    color: #444444;
 }
 
 
@@ -349,7 +339,7 @@
 /* Teams */
 
 .teams {
-    background: var(--gray-lightest);
+    background: #F2F5F7;
 
 }
 
@@ -407,7 +397,7 @@
 }
 
 .teams-project-container .my-title{
-    color: var(--crimson);
+    color: #A51C30;
     font-size: 45px;
     text-align: center;
     padding-bottom: 0;
@@ -444,7 +434,7 @@
     bottom: 9%;
     font-size: 30px;
     color: white;
-    background-color: var(--crimson);
+    background-color: #A51C30;
     border-width: 0px;
     border-radius: 5px;
     right:40px;
@@ -467,7 +457,7 @@
 }
 
 .teams .title-link {
-    color: var(--crimson);
+    color: #A51C30;
 }
 
 
@@ -617,7 +607,7 @@
 
 
 .footer-container {
-    background-color: var(--gray-light);
+    background-color: #999999;
     text-align: center;
     margin-bottom: 0;
     overflow: hidden;
@@ -635,22 +625,22 @@
 }
 
 .footer-link-collection a:link {
-    color: var(--gray-dark);
+    color: #444444;
     text-decoration: none;
 }
 
 .footer-link-collection a:visited {
-    color: var(--gray-dark);
+    color: #444444;
     text-decoration: none;
 }
 
 .footer-link-collection a:hover {
-    color: var(--crimson);
+    color: #A51C30;
     text-decoration: none;
 }
 
 .footer-link {
-    color: var(--gray-dark);
+    color: #444444;
     font-size: 16px;
     font-weight: 500;
 }
@@ -695,33 +685,33 @@
 }
 
 .supporters .my-title {
-    color: var(--crimson);
+    color: #A51C30;
 }
 
 .supporters .my-text {
-    color: var(--gray-dark);
+    color: #444444;
 }
 
 .supporters .call-to-action {
     text-align: center;
-    background: var(--gray-lightest);
+    background: #F2F5F7;
 }
 
 .supporters .call-to-action .my-title {
-    color: var(--gray-dark);
+    color: #444444;
 }
 
 .supporters .call-to-action .my-text {
-    color: var(--gray-dark);
+    color: #444444;
 }
 
 .supporters .tiers .my-text h2 {
-    color: var(--gray-dark);
+    color: #444444;
     margin-bottom: 20px;
 }
 
 .supporters .tiers .contact-container {
-    color: var(--crimson);
+    color: #A51C30;
 }
 
 .supporters li {
@@ -731,7 +721,7 @@
 
 .supporters .extra-info {
     margin-top: 40px;
-    color: var(--gray-dark) !important;
+    color: #444444 !important;
 }
 
 .supporters .tier-info p {
@@ -740,7 +730,7 @@
 }
 
 .supporters .tier-info span {
-    color: var(--crimson);
+    color: #A51C30;
 }
 
 .supporters .tier-logo h2 {
@@ -773,16 +763,16 @@
 
 .contact .glyphicon-envelope {
     font-size: 300px;
-    color: var(--gray-light);
+    color: #999999;
     width: 100%;
 }
 
 .contact .block .my-text {
-    color: var(--gray-dark);
+    color: #444444;
 }
 
 .contact .block .my-title {
-    color: var(--crimson);
+    color: #A51C30;
     font-size: 35px;
     padding-bottom: 0;
 }
@@ -790,7 +780,7 @@
 /* Signup */
 
 .signup .recruitment {
-    background: var(--gray-lightest);
+    background: #F2F5F7;
 }
 
 .signup .intro-block {
