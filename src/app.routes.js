@@ -33,6 +33,22 @@ let routes = ($stateProvider, $urlRouterProvider, $locationProvider) => {
       url: '/projects/uas',
       templateUrl: './views/projects/uas.html'
     })
+    .state('projects/rover', {
+      url: '/projects/rover',
+      templateUrl: './views/projects/rover.html'
+    })
+    .state('projects/pacbots', {
+      url: '/projects/pacbots',
+      templateUrl: './views/projects/pacbots.html'
+    })
+    .state('projects/balancer', {
+      url: '/projects/balacer',
+      templateUrl: './views/projects/balancer.html'
+    })
+    .state('competition', {
+      url: '/competition',
+      templateUrl: './views/competition.html'
+    })
     .state('supporters', {
       url: '/supporters',
       templateUrl: './views/supporters.html'

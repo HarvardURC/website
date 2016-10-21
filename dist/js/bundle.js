@@ -16960,7 +16960,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -16974,75 +16974,39 @@
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var SignupController = function () {
-	    function SignupController($http, $location, $anchorScroll, $scope) {
-	        _classCallCheck(this, SignupController);
+	  function SignupController($http, $location, $anchorScroll) {
+	    _classCallCheck(this, SignupController);
 
-	        this.name = 'SignupController';
-	        this.scope = $scope;
-	        this.application = {};
-	        this.http = $http;
-	        this.isSuccess = false;
-	        this.button_text = "Apply";
-	        $location.hash('top');
-	        $anchorScroll();
-	        this.teams1 = ["UAS", "Mech Warfare", "Micromouse", "Pacbot", "Pacbot organizational team"];
-	        this.teams2 = ["UAS", "Mech Warfare", "Micromouse", "Pacbot", "Pacbot organizational team"];
+	    this.name = 'SignupController';
+	    this.application = {};
+	    this.http = $http;
+	    this.isSuccess = false;
+	    this.button_text = "Apply";
+	    $location.hash('top');
+	    $anchorScroll();
+	    this.teams = ["UAS", "Mech Warfare", "Micromouse", "Pacbot", "Pacbot organizational team"];
+	  }
 
-	        this.teams3 = ["UAS", "Mech Warfare", "Micromouse", "Pacbot", "Pacbot organizational team"];
+	  _createClass(SignupController, [{
+	    key: 'apply',
+	    value: function apply() {
+	      if (this.check_application()) {
+	        this.isSuccess = true;
+	        this.button_text = "Submitted";
+	        return this.http.post('/api/signup', this.application);
+	      }
 	    }
+	  }, {
+	    key: 'check_application',
+	    value: function check_application() {
+	      return this.application.first_name && this.application.last_name && this.application.email && this.application.concentration && this.application.first_choice && this.application.second_choice && this.application.third_choice && this.application.class && this.application.reason && this.application.background && this.application.why;
+	    }
+	  }]);
 
-	    _createClass(SignupController, [{
-	        key: 'apply',
-	        value: function apply() {
-	            if (this.check_application()) {
-	                this.isSuccess = true;
-	                this.button_text = "Submitted";
-	                return this.http.post('/api/signup', this.application);
-	            }
-	        }
-	    }, {
-	        key: 'check_teams',
-	        value: function check_teams(team) {
-	            console.log("test" + team);
-	            switch (team) {
-	                case 1:
-	                    if (this.application.first_choice == this.application.second_choice) {
-	                        this.application.second_choice == '';
-	                    }
-	                    if (this.application.first_choice == this.application.third_choice) {
-	                        this.application.third_choice == '';
-	                    }
-	                    break;
-	                case 2:
-	                    if (this.application.second_choice == this.application.first_choice) {
-	                        this.application.first_choice == '';
-	                    }
-	                    if (this.application.second_choice == this.application.third_choice) {
-	                        this.application.third_choice == '';
-	                    }
-	                    break;
-	                case 3:
-	                    if (this.application.third_choice == this.application.first_choice) {
-	                        this.application.first_choice == '';
-	                    }
-	                    if (this.application.third_choice == this.application.second_choice) {
-	                        this.application.second_choice == '';
-	                    }
-	                    break;
-	            }
-	            this.scope.$digest();
-	        }
-	    }, {
-	        key: 'check_application',
-	        value: function check_application() {
-	            return this.application.first_name && this.application.last_name && this.application.email && this.application.concentration && this.application.first_choice && this.application.second_choice && this.application.third_choice && this.application.class && this.application.reason && this.application.background && this.application.why;
-	        }
-	    }]);
-
-	    return SignupController;
+	  return SignupController;
 	}();
 
-	SignupController.$inject = ['$http', '$location', '$anchorScroll', '$scope'];
+	SignupController.$inject = ['$http', '$location', '$anchorScroll'];
 
 	exports.default = SignupController;
 
@@ -21379,6 +21343,18 @@
 	  }).state('projects/uas', {
 	    url: '/projects/uas',
 	    templateUrl: './views/projects/uas.html'
+	  }).state('projects/rover', {
+	    url: '/projects/rover',
+	    templateUrl: './views/projects/rover.html'
+	  }).state('projects/pacbots', {
+	    url: '/projects/pacbots',
+	    templateUrl: './views/projects/pacbots.html'
+	  }).state('projects/balancer', {
+	    url: '/projects/balacer',
+	    templateUrl: './views/projects/balancer.html'
+	  }).state('competition', {
+	    url: 'competition',
+	    templateUrl: './views/competition.html'
 	  }).state('supporters', {
 	    url: '/supporters',
 	    templateUrl: './views/supporters.html'
