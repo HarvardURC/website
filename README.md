@@ -1,5 +1,16 @@
-# website
-The new HURC website
+# HURC website
+The new HURC website. It's live at www.harvardrobotics.com
+
+## Stack
+The website is built on a nodeJS backend with ExpressJs routing for backend API calls.
+
+The frontend is built on AngularJS 1, with ES6 classes. Frontend routing is handled by Angular ui-router.
+
+The script files are bundled using Webpack, the style files are minified and bundled usign gulp-minify-css and images are optimized using gulp-imagemin.
+
+Tasks are managed using Gulp.
+
+## Running instructions
 
 To run locally,
 
