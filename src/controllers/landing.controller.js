@@ -6,8 +6,10 @@ class LandingController {
   constructor($location, $anchorScroll) {
     this.name = 'LandingController';
     this.scrollToTop = () => {
-      $location.hash('top');
-      $anchorScroll();
+        var old = $location.hash();
+        $location.hash('top');
+        $anchorScroll();
+        $location.hash(old);
     };
 
     this.scrollToTop();

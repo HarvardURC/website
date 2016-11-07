@@ -3,21 +3,26 @@
 import angular from 'angular';
 
 class ProjectsController {
-  constructor($location, $anchorScroll) {
+  constructor($location, $anchorScroll, $timeout) {
     this.name = 'ProjectsController';
     this.scrollToProjects = () => {
+      var old = $location.hash();
       $location.hash('projects');
       $anchorScroll();
+      $location.hash(old);
     };
 
     this.scrollToTop = () => {
-      $location.hash('top');
-      $anchorScroll();
+        var old = $location.hash();
+        $location.hash('top');
+        $anchorScroll();
+        $location.hash(old);
     };
-    this.scrollToProjects();
+
+    $timeout(this.scrollToProjects, 10);
   }
 }
 
-ProjectsController.$inject = ['$location', '$anchorScroll'];
+ProjectsController.$inject = ['$location', '$anchorScroll', '$timeout'];
 
 export default ProjectsController;

@@ -16904,8 +16904,10 @@
 
 	  this.name = 'LandingController';
 	  this.scrollToTop = function () {
+	    var old = $location.hash();
 	    $location.hash('top');
 	    $anchorScroll();
+	    $location.hash(old);
 	  };
 
 	  this.scrollToTop();
@@ -16933,23 +16935,28 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var ProjectsController = function ProjectsController($location, $anchorScroll) {
+	var ProjectsController = function ProjectsController($location, $anchorScroll, $timeout) {
 	  _classCallCheck(this, ProjectsController);
 
 	  this.name = 'ProjectsController';
 	  this.scrollToProjects = function () {
+	    var old = $location.hash();
 	    $location.hash('projects');
 	    $anchorScroll();
+	    $location.hash(old);
 	  };
 
 	  this.scrollToTop = function () {
+	    var old = $location.hash();
 	    $location.hash('top');
 	    $anchorScroll();
+	    $location.hash(old);
 	  };
-	  this.scrollToProjects();
+
+	  $timeout(this.scrollToProjects, 10);
 	};
 
-	ProjectsController.$inject = ['$location', '$anchorScroll'];
+	ProjectsController.$inject = ['$location', '$anchorScroll', '$timeout'];
 
 	exports.default = ProjectsController;
 
@@ -17033,12 +17040,16 @@
 
 	  this.name = 'NavbarController';
 	  this.scrollToProjects = function () {
+	    var old = $location.hash();
 	    $location.hash('projects');
 	    $anchorScroll();
+	    $location.hash(old);
 	  };
 	  this.scrollToTop = function () {
+	    var old = $location.hash();
 	    $location.hash('top');
 	    $anchorScroll();
+	    $location.hash(old);
 	  };
 	  $(document).on('click', '.navbar-collapse.in', function (e) {
 	    if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
