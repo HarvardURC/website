@@ -4,7 +4,9 @@
   "description": "Hurc website",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -38,6 +40,7 @@
     "nodemon": "~1.9.2",
     "request": "~2.72.0",
     "serve-favicon": "~2.3.0",
+    "spotify-web-api-node": "^2.3.6",
     "webpack": "^1.13.2",
     "webpack-stream": "^3.2.0"
   }

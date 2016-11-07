@@ -384,6 +384,33 @@
     padding: 40px 0 40px 0;
 }
 
+.teams-project-rov {
+    background: url(../img/rover_preview.jpg) ;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 40px 0 40px 0;
+}
+
+.teams-project-bal {
+    background: url(../img/balancer_preview.jpg) ;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 40px 0 40px 0;
+}
+
+.teams-project-pb {
+    background: url(../img/pacbot_preview.png) ;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 40px 0 40px 0;
+}
+
 @media screen and (max-width:768px) {
     .teams-project-mm {
         padding: 40px 20px;
@@ -392,6 +419,15 @@
         padding: 40px 20px;
     }
     .teams-project-uas {
+        padding: 40px 20px;
+    }
+    .teams-project-pb {
+        padding: 40px 20px;
+    }
+    .teams-project-bal {
+        padding: 40px 20px;
+    }
+    .teams-project-rov {
         padding: 40px 20px;
     }
 }
@@ -487,6 +523,30 @@
     }
 
     .teams-project-mw {
+        padding: 40px 1% 40px 1%;
+    }
+
+    .teams-project-bal .teams-project-button {
+        right: 4%;
+    }
+
+    .teams-project-pb .teams-project-button {
+        right: 7%;
+    }
+
+    .teams-project-bal .teams-project-button {
+        right: 10%;
+    }
+
+    .teams-project-rov {
+        padding: 40px 0 40px 2%;
+    }
+
+    .teams-project-bal {
+        padding: 40px 2% 40px 0;
+    }
+
+    .teams-project-pb {
         padding: 40px 1% 40px 1%;
     }
 }
@@ -746,6 +806,10 @@
     margin-top: 40px;
 }
 
+.supporters .supporter-image {
+    width: 100%;
+}
+
 /* Contact */
 
 .contact .intro-block {
@@ -855,5 +919,54 @@
 }
 
 .uas .intro-block .my-title{
+    padding-top: 40px;
+}
+
+
+/* Balancer */
+
+.balancer .intro-block {
+    background: url(../img/balancer/balancer_4.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+.balancer .intro-block .my-title{
+    padding-top: 40px;
+}
+
+/* Pacbot */
+
+.pacbot .intro-block {
+    background: url(../img/pacbot/pacbot_3.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+.pacbot .intro-block .my-title{
+    padding-top: 40px;
+}
+
+/* Rover */
+
+.rover .intro-block {
+    background: url(../img/rover/rover_arm.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+.rover .intro-block .my-title{
     padding-top: 40px;
 }

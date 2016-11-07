@@ -42,12 +42,8 @@ let routes = ($stateProvider, $urlRouterProvider, $locationProvider) => {
       templateUrl: './views/projects/pacbots.html'
     })
     .state('projects/balancer', {
-      url: '/projects/balacer',
+      url: '/projects/balancer',
       templateUrl: './views/projects/balancer.html'
-    })
-    .state('competition', {
-      url: '/competition',
-      templateUrl: './views/competition.html'
     })
     .state('supporters', {
       url: '/supporters',
@@ -58,7 +54,7 @@ let routes = ($stateProvider, $urlRouterProvider, $locationProvider) => {
       templateUrl: './views/signup.html',
       controller: 'SignupController',
       controllerAs: 'vm'
-    });
+  });
 };
 
 export default routes;

@@ -21350,11 +21350,8 @@
 	    url: '/projects/pacbots',
 	    templateUrl: './views/projects/pacbots.html'
 	  }).state('projects/balancer', {
-	    url: '/projects/balacer',
+	    url: '/projects/balancer',
 	    templateUrl: './views/projects/balancer.html'
-	  }).state('competition', {
-	    url: 'competition',
-	    templateUrl: './views/competition.html'
 	  }).state('supporters', {
 	    url: '/supporters',
 	    templateUrl: './views/supporters.html'
