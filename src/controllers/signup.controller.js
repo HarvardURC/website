@@ -16,7 +16,8 @@ class SignupController {
         "Mech Warfare",
         "Micromouse",
         "Pacbot",
-        "Pacbot organizational team"
+        "Mars Rover",
+        "Balancer"
     ];
   }
 
