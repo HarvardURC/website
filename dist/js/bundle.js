@@ -16991,7 +16991,7 @@
 	    this.button_text = "Apply";
 	    $location.hash('top');
 	    $anchorScroll();
-	    this.teams = ["UAS", "Mech Warfare", "Micromouse", "Pacbot", "Pacbot organizational team"];
+	    this.teams = ["UAS", "Mech Warfare", "Micromouse", "Pacbot", "Mars Rover", "Balancer"];
 	  }
 
 	  _createClass(SignupController, [{

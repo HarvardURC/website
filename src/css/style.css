@@ -385,7 +385,7 @@
 }
 
 .teams-project-rov {
-    background: url(../img/rover_preview.jpg) ;
+    background: url(../img/rover_morews.png) ;
     background-size: cover;
     background-clip: content-box;
     background-position: center center;
@@ -394,7 +394,7 @@
 }
 
 .teams-project-bal {
-    background: url(../img/balancer_preview.jpg) ;
+    background: url(../img/balancer_morews.png) ;
     background-size: cover;
     background-clip: content-box;
     background-position: center center;
@@ -403,7 +403,7 @@
 }
 
 .teams-project-pb {
-    background: url(../img/pacbot_preview.jpg) ;
+    background: url(../img/pacbot_morews.png);
     background-size: cover;
     background-clip: content-box;
     background-position: center center;
