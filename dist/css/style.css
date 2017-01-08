@@ -26,7 +26,6 @@
     font-size: 62px;
     color: white;
     padding-bottom: 16px;
-    padding-top: 10vh;
 }
 
 @media screen and (max-width:1090px) {
@@ -238,6 +237,20 @@
     }
 }
 
+.textbox {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    margin-top:10vh;
+}
+
+.buffer {
+    padding: 20px 20px 24px 24px;
+}
+
+.poster {
+    padding-top:24px;
+}
+
 /**********************
 *                     *
 *    landing blocks   *
@@ -307,7 +320,8 @@
     padding: 24px 0px 20px 0px;
 }
 
-.hurc-intro-textbox {
+.hurc-intro .textbox {
+    margin-top: 10vh;
 }
 
 
@@ -741,7 +755,6 @@
 
 .supporters .intro-block .my-title {
     color: white;
-    padding-top: 40px;
 }
 
 .supporters .my-title {
@@ -821,10 +834,6 @@
     background-position-y: -160px;
 }
 
-.contact  .intro-block .my-title {
-    padding-top: 40px;
-}
-
 .contact .glyphicon-envelope {
     font-size: 300px;
     color: #999999;
@@ -855,10 +864,6 @@
     background-size: cover;
 }
 
-.signup .intro-block .my-title {
-    padding-top: 40px;
-}
-
 
 /* Mech Warfare */
 
@@ -885,10 +890,6 @@
 
 }
 
-.mechwarfare .intro-block .my-title{
-    padding-top: 40px;
-}
-
 /* Micromouse */
 
 .micromouse .intro-block {
@@ -899,10 +900,6 @@
     background-size: cover;
     background-position: bottom;
 
-}
-
-.micromouse .intro-block .my-title{
-    padding-top: 40px;
 }
 
 
@@ -918,11 +915,6 @@
 
 }
 
-.uas .intro-block .my-title{
-    padding-top: 40px;
-}
-
-
 /* Balancer */
 
 .balancer .intro-block {
@@ -935,9 +927,6 @@
 
 }
 
-.balancer .intro-block .my-title{
-    padding-top: 40px;
-}
 
 /* Pacbot */
 
@@ -949,10 +938,6 @@
     background-size: cover;
     background-position: bottom;
 
-}
-
-.pacbot .intro-block .my-title{
-    padding-top: 40px;
 }
 
 /* Rover */
@@ -967,6 +952,3 @@
 
 }
 
-.rover .intro-block .my-title{
-    padding-top: 40px;
-}
